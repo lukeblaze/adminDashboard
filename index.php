@@ -24,7 +24,7 @@
               <li>
                 <a href="">
                     <span><i class="fa fa-group"></i></span>
-                    <span>Students</span>
+                    <span class="bg-dark text-white">Students</span>
                 </a>
               </li>
               <li>
@@ -60,8 +60,11 @@
                 <span>Students</span>
               </div>
               <div class="card-body">
-                <span><i class="fa fa-group fa-3x"></i></span>
-               <span class="float-right">00</span>
+                <div class="card-body">
+                    <div class="table table-stripped table-hover">
+
+                    </div>
+                </div>
               </div>
               <div class="card-footer"></div>
               </div>
@@ -70,8 +73,7 @@
                   <span>Available Courses</span>
                 </div>
                 <div class="card-body">
-                  <span><i class="fa fa-group fa-3x"></i></span>
-                  <span class="float-right">00</span>
+                  
                 </div>
                 <div class="card-footer"></div>
             </div>
@@ -81,7 +83,7 @@
               </div>
               <div class="card-body">
                 <span><i class="fa fa-group fa-3x"></i></span>
-                <span class="float-right">00</span>
+                <span class="float-end">00</span>
               </div>
               <div class="card-footer"></div>
           </div>
@@ -91,7 +93,7 @@
             </div>
             <div class="card-body">
               <span><i class="fa fa-group fa-3x"></i></span>
-              <span class="float-right">00</span>
+              <span class="float-end">00</span>
             </div>
             <div class="card-footer"></div>
         </div>
@@ -117,8 +119,6 @@
 
 
    	<!-- All our code. write here   -->
-	
-<script src="jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
