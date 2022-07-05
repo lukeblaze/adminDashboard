@@ -1,48 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Creating admin dashboard">
-	<meta name="keywords" content="HTML,CSS,Zalego,Technology,Zalego institute,JavaScript">
-	<meta name="author" content="Your name">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Admin Template</title>
-    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+   <?php require_once('includes/navbar.php')?>
 </head>
 <body>
     <!-- All our code.Write here -->
+    <!-- header start -->
     <div class="header">
-         <img src="zalego.jpg" alt="zalego" height="50" width="50" class="rounded-circle">
-
+    <?php require_once('includes/header.php')?>
     </div>
+    <!-- header end -->
+
+    <!-- sidebar -->
     <div class="sidebar">
-        <nav>
-            <ul>
-              <li>
-                <a href="">
-                    <span><i class="fa fa-group"></i></span>
-                    <span class="bg-dark text-white">Students</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                    <span><i class="fa fa-folder-open"></i></span>
-                    <span>Courses</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                    <span><i class="fa fa-graduation-cap"></i></span>
-                    <span>Campus</span>
-                </a>
-              </li>  
-            </ul>
-
-        </nav>
+    <?php require_once('includes/sidebar.php')?>
     </div>
+    <!-- sidebar -->
+    
     <div class="main-content">
         <div class="container-fluid">
           <div class="row">
