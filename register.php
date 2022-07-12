@@ -4,7 +4,7 @@ require_once('processRegister.php')
 ?>
 
 
-<form action="register.php" method="POST" class="form-group" autocomplete="of">
+<form action="register.php?id=<?php echo $id?>" method="POST" class="form-group" autocomplete="of">
   <div class="justify-content-center align-items-center">
     <div class="row">
         <div class="header align-center">

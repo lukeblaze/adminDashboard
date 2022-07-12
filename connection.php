@@ -5,7 +5,7 @@ $password = "";
 $database = "zalego";
 
 
-$c=mysqli_connect($server,$username,$password,$database);
+$conn=mysqli_connect($server,$username,$password,$database);
 
 if($conn)
 {
@@ -13,6 +13,6 @@ if($conn)
 }
 else
 {
-    'Error occured'
+    'Error occured';
 }
 ?>

@@ -64,7 +64,7 @@ require_once('logics/dbconnection.php');
         <div class="container-fluid">
             <div class="card">
                 <div class="card-body">
-                    <table class="table table-hover table-stripped table-responsive{-sm|-md|-lg}">
+                    <table class="table table-hover table-stripped table-responsive{-sm|-md|-lg}" style="font-size:12px">
                     <thead>
                         <div class="card-header bg-dark text-white text-centre">
                             <span>Students</span>
@@ -94,7 +94,7 @@ require_once('logics/dbconnection.php');
                             <td><?php echo $fetchEnrollmentRecord['created_at']?></td>
                            
                             <td>
-                                <a href="#" class="btn btn-primary btn-sm">
+                                <a href="edit-enrollment.php?id=<?php echo $fetchEnrollmentRecord['no'] ?>" class="btn btn-primary btn-sm">
                                     <i class="fa fa-edit"></i>
                                 </a>
 
