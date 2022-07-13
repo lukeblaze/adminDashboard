@@ -21,45 +21,9 @@ require_once('logics/dbconnection.php');
 <body>
     
     <!-- All our code here -->
-    <div class="header text-white">
-        <img src="zalego.jpg" alt="zalego" height="50" width="50" class="rounded-circle">
+    <?php require_once('includes/navbar.php')?>
+    <?php require_once('includes/sidebar.php')?>
 
-
-        <span class="pull-right" style="padding:10px 30px;text-decoration:none">
-        <a href="logout.php"><i class="fa fa-sign-out fa-2x"></i></a>
-        </span>
-    </div>
-
-    <div class="sidebar">
-        <nav>
-            <ul>
-                <li>
-                    <a href="">
-                        <span><i class="fa fa-group"></i></span>
-                    
-                    <span>Students</span></a>
-                </li>
-                <li>
-                    <a href="">
-                        <span><i class="fa fa-group"></i></span>
-                        <span>Courses</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span><i class="fa fa-folder-open"></i></span>
-                        <span>Courses</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span><i class="fa fa-graduation-cap"></i></span>
-                        <span>Campus</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
     <div class="main-content">
         <div class="container-fluid">
             <div class="card">
@@ -98,10 +62,10 @@ require_once('logics/dbconnection.php');
                                     <i class="fa fa-edit"></i>
                                 </a>
 
-                                <a href="#" class="btn btn-info btn-sm">
+                                <a href="view-enrollment.php?id=<?php echo $fetchEnrollmentRecord['no'] ?>" class="btn btn-info btn-sm">
                                     <i class="fa fa-eye"></i>
 
-                                    <a href="#" class="btn btn-danger btn-sm">
+                                    <a href="delete-enrollment.php?id=<?php echo $fetchEnrollmentRecord['no'] ?>" class="btn btn-danger btn-sm">
                                         <i class="fa fa-trash"></i>
 
                                     </td>

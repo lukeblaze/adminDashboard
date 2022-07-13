@@ -12,20 +12,19 @@ $countAllFemale = mysqli_num_rows($queryEnrolledFemale);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <?php require_once('includes/navbar.php')?>
+<?php require_once('includes/header.php')?>
+
 </head>
 <body>
     <!-- All our code.Write here -->
     <!-- header start -->
-    <div class="header">
-    <?php require_once('includes/header.php')?>
-    </div>
+   
+    <?php require_once('includes/navbar.php')?>
+
     <!-- header end -->
 
     <!-- sidebar -->
-    <div class="sidebar">
     <?php require_once('includes/sidebar.php')?>
-    </div>
     <!-- sidebar -->
     
     <div class="main-content">
