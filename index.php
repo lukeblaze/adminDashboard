@@ -7,6 +7,11 @@ $countAllStudents = mysqli_num_rows($queryEnrolledStudents);
 
 $queryEnrolledFemale =  mysqli_query($conn, "SELECT * FROM enrollment WHERE gender='Female'");
 $countAllFemale = mysqli_num_rows($queryEnrolledFemale);
+
+
+$queryEnrolledStudents = mysqli_query($conn, "SELECT * FROM contactus");
+$countAllStudents = mysqli_num_rows($queryEnrolledStudents);
+
 ?>
 
 <!DOCTYPE html>
@@ -87,6 +92,18 @@ $countAllFemale = mysqli_num_rows($queryEnrolledFemale);
             <span>Student Analysis</span>
           </div>
         </div>
+        </div>
+        <br>
+        <div class="col-lg-3">
+            <div class="card-header bg-dark text-white text-center">
+              <span>Messages</span>
+            </div>
+            <div class="card-body">
+              <span><i class="fa fa-group fa-3x"></i></span>
+              <span class="float-end"><?php echo $countAllFemale ?></span>
+            </div>
+            <div class="card-footer"></div>
+
 
     </div>
 

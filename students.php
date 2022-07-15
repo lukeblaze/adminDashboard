@@ -68,6 +68,8 @@ require_once('logics/dbconnection.php');
                                     <a href="delete-enrollment.php?id=<?php echo $fetchEnrollmentRecord['no'] ?>" class="btn btn-danger btn-sm">
                                         <i class="fa fa-trash"></i>
 
+                                        <!-- <a href="contactus.php?id=<?php echo $fetchEnrollmentRecord['no'] ?>" class="btn btn-success btn-sm"><i class="fa fa-envelope"></i></a> -->
+
                                     </td>
                         </tr>
                        <?php }  ?>

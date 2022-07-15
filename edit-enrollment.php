@@ -41,17 +41,17 @@ require_once('logics/processUpdate.php')
                 <div class="row">
                     <div class="mb-3 col-lg-6">
                         <label for="fullName" class="form-label">Full Name:</label>
-                        <input type="text"  name="fullname" value="<?php echo $fullname?>" class="form-control" placeholder="Enter your full name">
+                        <input type="text"  name="fullname" value="<?php echo $fullname?>" class="form-control">
                     </div>
                     <div class="mb-3 col-lg-6">
                         <label for="phoneNumber" class="form-label">Phone Number:</label>
-                        <input type="text" name="phonenumber"value="<?php echo $phonenumber?>" class="form-control" placeholder="+2547.....">
+                        <input type="text" name="phonenumber"value="<?php echo $phonenumber?>" class="form-control">
                     </div>
                 </div>
                     <div class="row">
                         <div class="mb-3 col-lg-6">
                             <label for="email" class="form-label">Email Address:</label>
-                            <input type="email" name="email" value="<?php echo $email?>" class="form-control" placeholder="Please enter your email">
+                            <input type="email" name="email" value="<?php echo $email?>" class="form-control">
                         </div>
                         <div class="mb-3 col-lg-6">
                             <label for="gender" class="form-label">What's your gender?</label>
