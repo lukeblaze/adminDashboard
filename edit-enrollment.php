@@ -12,7 +12,7 @@ while($fetchStudent= mysqli_fetch_array($queryStudent))
     $gender=$fetchStudent['gender'];
     $course=$fetchStudent['course'];
 }
-//upfdating records
+//updating records
 require_once('logics/processUpdate.php')
 
 ?>

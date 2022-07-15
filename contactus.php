@@ -1,8 +1,10 @@
 <?php
+
 require_once('logics/dbconnection.php');
+require_once('connection.php');
 //1.database connection
-$sqlFetchContactStudent= mysqli_query($conn, "SELECT * FROM contactus ");
-while($fetchStudent= mysqli_fetch_array($sqlFetchContactStudent))
+$sqlFetchContactStudent= mysqli_query($conn, "SELECT * FROM contactus");
+while($fetchContactStudent= mysqli_fetch_array($sqlFetchContactStudent));
 
 ?>
 
