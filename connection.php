@@ -7,12 +7,12 @@ $database = "zalego";
 
 $conn=mysqli_connect($server,$username,$password,$database);
 
-if($conn)
-{
-    echo 'Database connection success';
-}
-else
-{
-    'Error occured';
-}
+// if($conn)
+// {
+//     echo 'Database connection success';
+// }
+// else
+// {
+//     'Error occured';
+// }
 ?>

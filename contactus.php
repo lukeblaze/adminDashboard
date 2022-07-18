@@ -1,10 +1,8 @@
 <?php
 
-require_once('logics/dbconnection.php');
 require_once('connection.php');
 //1.database connection
 $sqlFetchContactStudent= mysqli_query($conn, "SELECT * FROM contactus");
-while($fetchContactStudent= mysqli_fetch_array($sqlFetchContactStudent));
 
 ?>
 
@@ -42,6 +40,7 @@ while($fetchContactStudent= mysqli_fetch_array($sqlFetchContactStudent));
                             <th scope="col">Email</th>
                             <th scope="col">Phone Number</th>
                             <th scope="col">Message</th>
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,6 +52,21 @@ while($fetchContactStudent= mysqli_fetch_array($sqlFetchContactStudent));
                             <td><?php echo $fetchContactRecord['phonenumber']?></td>
                             <td><?php echo $fetchContactRecord['message']?></td>
                             <td><?php echo $fetchContactRecord['created_at']?></td>
+
+                            <td>
+                                <a href="edit-contactus.php?id=<?php echo $fetchContactRecord['no'] ?>" class="btn btn-primary btn-sm">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+
+                                <a href="view-contactus.php?id=<?php echo $fetchContactRecord['no'] ?>" class="btn btn-info btn-sm">
+                                    <i class="fa fa-eye"></i>
+
+                                    <a href="delete-contactus.php?id=<?php echo $fetchContactRecord['no'] ?>" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-trash"></i>
+
+                                        <!-- <a href="contactus.php?id=<?php echo $fetchEnrollmentRecord['no'] ?>" class="btn btn-success btn-sm"><i class="fa fa-envelope"></i></a> -->
+
+                                    </td>
                            
                            
                         </tr>

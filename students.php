@@ -44,7 +44,7 @@ require_once('logics/dbconnection.php');
                             <th scope="col">gender</th>
                             <th scope="col">enrolled on</th>
                             <th scope="col">Action</th>
-                            <th scope="col">A</th>
+                       
                         </tr>
                     </thead>
                     <tbody>
